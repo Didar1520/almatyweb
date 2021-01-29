@@ -14,19 +14,25 @@
         <div class="header-top-wrapper">
             <div class="container">
                 <div class="header-top">
-                    <div class="header-menu">
-                        <div class="header-menu-links">
-                            <a class="header-menu__port" href="#">Портфолио</a>
-                            <a class="header-menu__price" href="#">Цены</a>
-                            <a class="header-menu__contacts" href="#">Контакты</a>
-                            <a class="header-menu__services" href="#">Услуги</a>
-                        </div>
+                    <div class="header-menu hambuger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+                        
+                        <ul class="header-menu-links menu__box">
+                           <li><a class=" menu__item" href="#">Портфолио</a></li>
+                           <li><a class=" menu__item" href="#">Цены</a></li>
+                           <li><a class=" menu__item" href="#">Контакты</a></li>
+                           <li><a class=" menu__item" href="#">Услуги</a></li>
+                        </ul>
+                        
                     </div>
-                    <div class="header-contacts">
-                        <a href="" class="header-contacts__phone-1">
+                    <div class="header-contacts  ">
+                        <a  href="tel:+7 (700) 772 72 94" class="header-contacts__phone-1">
                             8 700 772 72 94
                         </a>
-                        <a href="" class="header-contacts__phone-2">
+                        <a  href="tel:+7 (708) 143 69 59" class="header-contacts__phone-2">
                             8 708 143 6959
                         </a>
                         <div class="header-contacts__icon">
@@ -65,11 +71,12 @@
                         <div class="header-body-text">
                             <div class="header-body-text__title">
                                 Almaty
-                                Web 2.0
+                                <span>Web 2.0</span>
                             </div>
                             <div class="header-body-text__subtitle">
-                                Создание сайтов с нуля
-                                под ключ
+                                Создание <span> сайтов
+                                 с нуля
+                                под </span>ключ
                             </div>
                             <div class="header-body-text__social">
                                 <svg class="header-insta" width="48" height="49" viewBox="0 0 48 49" fill="none"
@@ -201,9 +208,13 @@
 
 
                             </div>
+                            
+                            <button class="header-body-text__button">
+                                Узнать больше
+                            </button>
                         </div>
                         <div class="header-body__mainBg">
-                            <img class="mainBg" src="images/header/heaeder-bg-min.png" alt="Background">
+                            <img class="mainBg" src="images/header/heaeder-bg-min.jpeg" alt="Background">
                         </div>
                         <!-- /.header-body__mainBg -->
                     </div>
@@ -224,8 +235,8 @@
                     Наши преимущества
                 </div>
                 <div class="our-advantages-item">
-                    <div class="our-advantages-item__image">
-                        <img src="images/our-advantages/UniqueDesign.png" alt="">
+                    <div class="our-advantages-item__image right">
+                        <img class="img_01" src="images/our-advantages/UniqueDesign.png" alt="">
                     </div>
                     <div class="our-advantages-item__text">
                         <div class="our-advantages-text__title">
@@ -252,15 +263,15 @@
                             С учетом того что более 55% людей выходят со смартфона это очень важно!
                         </div>
                     </div>
-                    <div class="our-advantages-item__image">
-                        <img src="images/our-advantages/UniqueDesign.png" alt="">
+                    <div class="our-advantages-item__image left ">
+                        <img class="img_02 " src="images/our-advantages/adaptive.jpg" alt="">
                     </div>
                 </div>
 
 
                 <div class="our-advantages-item">
-                    <div class="our-advantages-item__image">
-                        <img src="images/our-advantages/price.png" alt="">
+                    <div class="our-advantages-item__image right">
+                        <img class=" img_03" src="images/our-advantages/price.png" alt="">
                     </div>
                     <div class="our-advantages-item__text">
                         <div class="our-advantages-text__title">
@@ -295,8 +306,8 @@
                             на его позиции и скорости загрузки.
                         </div>
                     </div>
-                    <div class="our-advantages-item__image">
-                        <img src="images/our-advantages/quality.png" alt="">
+                    <div class="our-advantages-item__image left  ">
+                        <img class="img_04 " src="images/our-advantages/quality.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -313,228 +324,578 @@
                         Наши работы
                     </div>
                     <div class="our-works-menu">
-                        <a href="#" class="our-works-menu__link">Все</a>
-                        <a href="#" class="our-works-menu__link">Приложения</a>
-                        <a href="#" class="our-works-menu__link">Дизайн</a>
-                        <a href="#" class="our-works-menu__link">Логотипы</a>
+                        <a href="#" class="our-works-menu__link active-link">Все</a>
+                        <a href="#" class="our-works-menu__link inactive-link">Приложения</a>
+                        <a href="#" class="our-works-menu__link inactive-link">Дизайн</a>
+                        <a href="#" class="our-works-menu__link inactive-link">Логотипы</a>
                     </div>
 
                     <div class="our-works-items">
                         <div class="our-works-item">
-                           <div class="our-works-item-image__wrapper">
-                               <img class="our-works-item__image" src="images/our-works/project.png" alt="">
+                            <div class="our-works-item-image__wrapper">
+                                <img class="our-works-item__image" src="images/our-works/01.jpg" alt="">
                             </div>
                             <div class="our-works-text">
-                                 <div class="our-works-item__category">
-                                     Категория
-                                 </div>
-                                 <div class="our-works__text">
-                                     <div class="item-text__title">
-                                         Название проекта
-                                     </div>
-                                     <div class="item-text__date">
-                                         2020
-                                     </div>
-                                 </div>
+                                <div class="our-works-item__category">
+                                    Категория
+                                </div>
+                                <div class="our-works__text">
+                                    <div class="item-text__title">
+                                        Название проекта
+                                    </div>
+                                    <div class="item-text__date">
+                                        2020
+                                    </div>
+                                </div>
                             </div>
-                           
+
                         </div>
                         <!--  -->
 
-                          <div class="our-works-item">
-                              <div class="our-works-item-image__wrapper">
-                                  <img class="our-works-item__image" src="images/our-works/project.png" alt="">
-                              </div>
-                              <div class="our-works-text">
-                                  <div class="our-works-item__category">
-                                      Категория
-                                  </div>
-                                  <div class="our-works__text">
-                                      <div class="item-text__title">
-                                          Название проекта
-                                      </div>
-                                      <div class="item-text__date">
-                                          2020
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-                          <!--  -->
-
-                            <div class="our-works-item">
-                                <div class="our-works-item-image__wrapper">
-                                    <img class="our-works-item__image" src="images/our-works/project.png" alt="">
-                                </div>
-                                <div class="our-works-text">
-                                    <div class="our-works-item__category">
-                                        Категория
-                                    </div>
-                                    <div class="our-works__text">
-                                        <div class="item-text__title">
-                                            Название проекта
-                                        </div>
-                                        <div class="item-text__date">
-                                            2020
-                                        </div>
-                                    </div>
-                                </div>
-
+                        <div class="our-works-item">
+                            <div class="our-works-item-image__wrapper">
+                                <img class="our-works-item__image" src="images/our-works/02.jpg" alt="">
                             </div>
-                            <!--  -->
-
-                              <div class="our-works-item">
-                                  <div class="our-works-item-image__wrapper">
-                                      <img class="our-works-item__image" src="images/our-works/project.png" alt="">
-                                  </div>
-                                  <div class="our-works-text">
-                                      <div class="our-works-item__category">
-                                          Категория
-                                      </div>
-                                      <div class="our-works__text">
-                                          <div class="item-text__title">
-                                              Название проекта
-                                          </div>
-                                          <div class="item-text__date">
-                                              2020
-                                          </div>
-                                      </div>
-                                  </div>
-
-                              </div>
-                              <!--  -->
-
-                                <div class="our-works-item">
-                                    <div class="our-works-item-image__wrapper">
-                                        <img class="our-works-item__image" src="images/our-works/project.png" alt="">
-                                    </div>
-                                    <div class="our-works-text">
-                                        <div class="our-works-item__category">
-                                            Категория
-                                        </div>
-                                        <div class="our-works__text">
-                                            <div class="item-text__title">
-                                                Название проекта
-                                            </div>
-                                            <div class="item-text__date">
-                                                2020
-                                            </div>
-                                        </div>
-                                    </div>
-
+                            <div class="our-works-text">
+                                <div class="our-works-item__category">
+                                    Категория
                                 </div>
-                                <!--  -->
+                                <div class="our-works__text">
+                                    <div class="item-text__title">
+                                        Название проекта
+                                    </div>
+                                    <div class="item-text__date">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
 
-                                  <div class="our-works-item">
-                                      <div class="our-works-item-image__wrapper">
-                                          <img class="our-works-item__image" src="images/our-works/project.png" alt="">
-                                      </div>
-                                      <div class="our-works-text">
-                                          <div class="our-works-item__category">
-                                              Категория
-                                          </div>
-                                          <div class="our-works__text">
-                                              <div class="item-text__title">
-                                                  Название проекта
-                                              </div>
-                                              <div class="item-text__date">
-                                                  2020
-                                              </div>
-                                          </div>
-                                      </div>
+                        </div>
+                        <!--  -->
 
-                                  </div>
-                                  <!--  -->
+                        <div class="our-works-item">
+                            <div class="our-works-item-image__wrapper">
+                                <img class="our-works-item__image" src="images/our-works/project.png" alt="">
+                            </div>
+                            <div class="our-works-text">
+                                <div class="our-works-item__category">
+                                    Категория
+                                </div>
+                                <div class="our-works__text">
+                                    <div class="item-text__title">
+                                        Название проекта
+                                    </div>
+                                    <div class="item-text__date">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
 
-                                 <div class="our-works-item">
-                                     <div class="our-works-item-image__wrapper">
-                                         <img class="our-works-item__image" src="images/our-works/project.png" alt="">
-                                     </div>
-                                     <div class="our-works-text">
-                                         <div class="our-works-item__category">
-                                             Категория
-                                         </div>
-                                         <div class="our-works__text">
-                                             <div class="item-text__title">
-                                                 Название проекта
-                                             </div>
-                                             <div class="item-text__date">
-                                                 2020
-                                             </div>
-                                         </div>
-                                     </div>
+                        </div>
+                        <!--  -->
 
-                                 </div>
-                                 <!--  -->
+                        <div class="our-works-item">
+                            <div class="our-works-item-image__wrapper">
+                                <img class="our-works-item__image" src="images/our-works/03.png" alt="">
+                            </div>
+                            <div class="our-works-text">
+                                <div class="our-works-item__category">
+                                    Категория
+                                </div>
+                                <div class="our-works__text">
+                                    <div class="item-text__title">
+                                        Название проекта
+                                    </div>
+                                    <div class="item-text__date">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
 
-                                   <div class="our-works-item">
-                                       <div class="our-works-item-image__wrapper">
-                                           <img class="our-works-item__image" src="images/our-works/project.png" alt="">
-                                       </div>
-                                       <div class="our-works-text">
-                                           <div class="our-works-item__category">
-                                               Категория
-                                           </div>
-                                           <div class="our-works__text">
-                                               <div class="item-text__title">
-                                                   Название проекта
-                                               </div>
-                                               <div class="item-text__date">
-                                                   2020
-                                               </div>
-                                           </div>
-                                       </div>
+                        </div>
+                        <!--  -->
 
-                                   </div>
-                                   <!--  -->
+                        <div class="our-works-item">
+                            <div class="our-works-item-image__wrapper">
+                                <img class="our-works-item__image" src="images/our-works/04.jpg" alt="">
+                            </div>
+                            <div class="our-works-text">
+                                <div class="our-works-item__category">
+                                    Категория
+                                </div>
+                                <div class="our-works__text">
+                                    <div class="item-text__title">
+                                        Название проекта
+                                    </div>
+                                    <div class="item-text__date">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--  -->
+
+                        <div class="our-works-item">
+                            <div class="our-works-item-image__wrapper">
+                                <img class="our-works-item__image" src="images/our-works/05.png" alt="">
+                            </div>
+                            <div class="our-works-text">
+                                <div class="our-works-item__category">
+                                    Категория
+                                </div>
+                                <div class="our-works__text">
+                                    <div class="item-text__title">
+                                        Название проекта
+                                    </div>
+                                    <div class="item-text__date">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--  -->
+
+                        <div class="our-works-item">
+                            <div class="our-works-item-image__wrapper">
+                                <img class="our-works-item__image" src="images/our-works/06.jpg" alt="">
+                            </div>
+                            <div class="our-works-text">
+                                <div class="our-works-item__category">
+                                    Категория
+                                </div>
+                                <div class="our-works__text">
+                                    <div class="item-text__title">
+                                        Название проекта
+                                    </div>
+                                    <div class="item-text__date">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--  -->
+
+                        <div class="our-works-item">
+                            <div class="our-works-item-image__wrapper">
+                                <img class="our-works-item__image" src="images/our-works/07.jpg" alt="">
+                            </div>
+                            <div class="our-works-text">
+                                <div class="our-works-item__category">
+                                    Категория
+                                </div>
+                                <div class="our-works__text">
+                                    <div class="item-text__title">
+                                        Название проекта
+                                    </div>
+                                    <div class="item-text__date">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--  -->
 
 
-                                     <div class="our-works-item">
-                                         <div class="our-works-item-image__wrapper">
-                                             <img class="our-works-item__image" src="images/our-works/project.png"
-                                                 alt="">
-                                         </div>
-                                         <div class="our-works-text">
-                                             <div class="our-works-item__category">
-                                                 Категория
-                                             </div>
-                                             <div class="our-works__text">
-                                                 <div class="item-text__title">
-                                                     Название проекта
-                                                 </div>
-                                                 <div class="item-text__date">
-                                                     2020
-                                                 </div>
-                                             </div>
-                                         </div>
+                        <div class="our-works-item">
+                            <div class="our-works-item-image__wrapper">
+                                <img class="our-works-item__image" src="images/our-works/08.jpg" alt="">
+                            </div>
+                            <div class="our-works-text">
+                                <div class="our-works-item__category">
+                                    Категория
+                                </div>
+                                <div class="our-works__text">
+                                    <div class="item-text__title">
+                                        Название проекта
+                                    </div>
+                                    <div class="item-text__date">
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
 
-                                     </div>
-                                     <!--  -->
+                        </div>
+                        <!--  -->
 
-                       
-
-                        
-
-                       
-
-                     
-
-                      
-
-                        
-
-
-                      
                     </div>
                 </div>
 
             </div>
         </div>
         <!-- /.our-works-wrapper -->
+  <div class="services-wrapper">
+      <div class="container">
+          <div class="services">
+              <div class="services-title">
+                  Услуги
+              </div>
+              <!-- /.services-title -->
+              <div class="services-items">
+
+                  <div class="services-item">
+                      <div class="services-item__title">
+                          Одностраничный сайт
+                      </div>
+                      <div class="services-item__descr">
+                          Подходит для сайта одного товара или услуги.
+                          Возможно добавить во функционал отзывы или таймер
+                          обратного отсчета
+                      </div>
+                  </div>
+                  <!-- /.services-item -->
+
+
+                  <div class="services-item">
+                      <div class="services-item__title">
+                          Корпоративный сайт
+                      </div>
+                      <div class="services-item__descr">
+                          Идеальное решение для сайта компаний.
+                          Можно разместить различные сертификаты и достижение.
+                          Также возможно добавить окно для онлайн консультанта
+                      </div>
+                  </div>
+                  <!-- /.services-item -->
+
+                  <div class="services-item">
+                      <div class="services-item__title">
+                          Сайт каталог
+                      </div>
+                      <div class="services-item__descr">
+                          Сайт с каталогом товаров
+                          Для размещение товаров с сортировкой и
+                          группировкой и описанием для каждого товара.
+                      </div>
+                  </div>
+                  <!-- /.services-item -->
+
+
+                  <div class="services-item">
+                      <div class="services-item__title">
+                          Маркетинг и продвижение
+                      </div>
+                      <div class="services-item__descr">
+                          Продвижение сайта в топы поисковых систем Яндекса и Гугл.
+                          Реклама в соц сетях и таргетированная реклама
+                      </div>
+                  </div>
+                  <!-- /.services-item -->
+
+
+                  <div class="services-item">
+                      <div class="services-item__title">
+                          Посадка на CMS (Wordpress, OpenCart)
+                      </div>
+                      <div class="services-item__descr">
+                          Натяжка сайта на популярные CMS для дальнейшего
+                          простого управление им заказчиком.
+                          Есть бесплатное обучение
+                      </div>
+                  </div>
+                  <!-- /.services-item -->
+
+
+                  <div class="services-item">
+                      <div class="services-item__title">
+                          Доработка
+                          сайта
+                      </div>
+                      <div class="services-item__descr">
+                          Доработка вашего существующего сайта или перенос
+                          сайта сделанный на Tilda и других
+                          конструкторах на чистый и валидный код
+                      </div>
+                  </div>
+                  <!-- /.services-item -->
+
+                  <div class="services-item">
+                      <div class="services-item__title">
+                          Создание дизайна
+                      </div>
+                      <div class="services-item__descr">
+                          Создание дизайна, фирменного стиля и логотипа.
+                          Дружественный и понятный интерфейс
+                      </div>
+                  </div>
+                  <!-- /.services-item -->
+
+
+                  <div class="services-item">
+                      <div class="services-item__title">
+                          Модульный сайт
+                      </div>
+                      <div class="services-item__descr">
+                          Сделаем сайт по вашему усмотрению и бюджету,
+                          можете сами участвовать в созданий сайта на
+                          каждом этапе.
+                      </div>
+                  </div>
+                  <!-- /.services-item -->
+
+
+                  <div class="services-item">
+                      <div class="services-item__title">
+                          Создание сайта на CMS
+                      </div>
+                      <div class="services-item__descr">
+                          Создание сайта с нуля на CMS Wordpress, OpenCart, Joomla и других CMS
+                      </div>
+                  </div>
+                  <!-- /.services-item -->
+              </div>
+
+          </div>
+          <!-- /.services -->
+      </div>
+      <!-- /.container -->
+  </div>
+  <!-- /.services-wrapper -->
+
+  <div class="rates-wrapper">
+      <div class="container">
+          <div class="rates">
+              <div class="rates-title">
+                  Популярные тарифы
+              </div>
+
+              <div class="rates-cards">
+
+                  <div class="rates-card">
+                      <div class="rates-card__image">
+                          <img src="images/rates/card01.png" alt="">
+                      </div>
+                      <div class="cards-title">
+                          Landing Page
+                      </div>
+                      <div class="cards-descr">
+                          Короткие сроки
+                          Начальная SEO оптимизация
+                          Отличный выбор для сайта товара, акции,
+                          услуги или для сайта портфолио
+                      </div>
+                      <div class="cards-price">
+                          50000 тг
+                      </div>
+                      <button class="card-button">
+                          Заказать
+                      </button>
+                  </div>
+                  <!-- /.cards -->
+
+                  <div class="rates-card">
+                      <div class="rates-card__image">
+                          <img src="images/rates/card02.png" alt="">
+                      </div>
+                      <div class="cards-title">
+                          Интернет Магазин
+                      </div>
+                      <div class="cards-descr">
+                          Начальная SEO оптимизация
+                          Поддержка сайта, возможно администрирование
+                          Гарантия и обслуживание
+                          Возможно создание на WordPress Woocomerce и OpenCart
+                      </div>
+                      <div class="cards-price">
+                          150000 тг
+                      </div>
+                      <button class="card-button">
+                          Заказать
+                      </button>
+                  </div>
+                  <!-- /.cards -->
+
+
+                  <div class="rates-card">
+                      <div class="rates-card__image">
+                          <img src="images/rates/card03.png" alt="">
+                      </div>
+                      <div class="cards-title">
+                          Приложение
+                      </div>
+                      <div class="cards-descr">
+                          Мобильное приложение или сервис на JavaScript
+                          С использвованием библиотек
+                          React, React Native
+                          Возможна публикация в App Store и Play Market
+                      </div>
+                      <div class="cards-price">
+                          350000 тг
+                      </div>
+                      <button class="card-button">
+                          Заказать
+                      </button>
+                  </div>
+                  <!-- /.cards -->
+              </div>
+          </div>
+          <!-- /.rates -->
+      </div>
+      <!-- /.container -->
+  </div>
+  <!-- /.rates-wrapper -->
+
+  <div class="attention-wrapper">
+      <div class="container">
+          <div class="attention">
+              <div class="attention__title">
+                  Важно знать!
+                  Какие сайты мы не делаем
+              </div>
+              <div class="attention__descr">
+                  Прежде всего мы не делаем некачественные сайты на скорую руку на конструкторах.
+                  Мы не делаем сайты букмекерских контор, азартных игр, казино а также сайты связанные с
+                  алкогольной или табачной
+                  продукцией, сайты танцевальных студий, клубов, модельных агенств. Сайты связанные с гаданием и с
+                  финансовыми
+                  пирамидами.
+                  <p>
+                      Также указанные цены могут варироватся и возможна оплата по частям по мере
+                      готовности сайта
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <footer>
+      <div class="container">
+          <div class="footer">
+              <div class="footer-social flex-column">
+                  <div class="footer-social__title footer-title">
+                      Мы в соц сетях
+                  </div>
+                  <div class="footer-social__icons">
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <svg width="32px" height="32px" viewbox="0 0 32 32" version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                              <path d="M0 0L32 0L32 32L0 32L0 0Z" id="path_1" />
+                              <clipPath id="mask_1">
+                                  <use xlink:href="#path_1" />
+                              </clipPath>
+                          </defs>
+                          <g id="icons8_telegram_app_1">
+                              <path d="M0 0L32 0L32 32L0 32L0 0Z" id="Background" fill="none" fill-rule="evenodd"
+                                  stroke="none" />
+                              <g clip-path="url(#mask_1)">
+                                  <path
+                                      d="M24.0701 0.00217533C23.7341 0.0178006 23.4177 0.115456 23.1365 0.224831L23.1326 0.224831C22.8474 0.338112 21.492 0.908426 19.4334 1.77171C17.3748 2.63889 14.7029 3.76389 12.0506 4.88108C6.75368 7.11155 1.54665 9.30686 1.54665 9.30686L1.60915 9.28343C1.60915 9.28343 1.24977 9.40061 0.874772 9.65843C0.683366 9.78343 0.472428 9.9553 0.288835 10.2248C0.105241 10.4944 -0.0431969 10.9084 0.0114911 11.3342C0.101335 12.0569 0.570085 12.4905 0.906022 12.7287C1.24587 12.9709 1.57009 13.0842 1.57009 13.0842L1.5779 13.0842L6.46071 14.7287C6.67946 15.4319 7.94899 19.6037 8.25368 20.5647C8.43337 21.1389 8.60915 21.4983 8.8279 21.7717C8.93337 21.9123 9.05837 22.0295 9.2068 22.1233C9.2654 22.1584 9.3279 22.1858 9.3904 22.2092C9.40993 22.2209 9.42946 22.2248 9.4529 22.2287L9.40212 22.217C9.41774 22.2209 9.42946 22.2326 9.44118 22.2366C9.48024 22.2483 9.50759 22.2522 9.55837 22.26C10.3318 22.4944 10.9529 22.0139 10.9529 22.0139L10.9881 21.9866L13.8709 19.3616L18.7029 23.0686L18.8123 23.1155C19.8201 23.5569 20.8396 23.3108 21.3787 22.8772C21.9216 22.4397 22.1326 21.8811 22.1326 21.8811L22.1677 21.7912L25.9021 2.66233C26.0076 2.18968 26.0349 1.74827 25.9177 1.31858C25.8006 0.888894 25.4998 0.486551 25.1365 0.271706C24.7693 0.0529563 24.406 -0.0134497 24.0701 0.00217533L24.0701 0.00217533ZM23.9685 2.05273C23.9646 2.11523 23.9763 2.10742 23.949 2.22852L23.949 2.24023L20.2498 21.1699C20.2341 21.1973 20.2068 21.2559 20.1326 21.3145C20.0545 21.377 19.992 21.416 19.6677 21.2871L13.7576 16.7559L10.1873 20.0098L10.9373 15.2207C10.9373 15.2207 20.1951 6.5918 20.5935 6.2207C20.992 5.84961 20.8591 5.77148 20.8591 5.77148C20.8865 5.31836 20.2576 5.63867 20.2576 5.63867L8.0818 13.1816L8.0779 13.1621L2.24196 11.1973L2.24196 11.1934C2.23805 11.1934 2.23024 11.1895 2.22633 11.1895C2.23024 11.1895 2.25758 11.1777 2.25758 11.1777L2.28883 11.1621L2.32008 11.1504C2.32008 11.1504 7.53102 8.95508 12.8279 6.72461C15.4802 5.60742 18.1521 4.48242 20.2068 3.61523C22.2615 2.75195 23.781 2.11914 23.867 2.08398C23.949 2.05273 23.9099 2.05273 23.9685 2.05273L23.9685 2.05273Z"
+                                      transform="translate(2.000183 3.9941406)" id="Shape" fill="#007BFF"
+                                      fill-rule="evenodd" stroke="none" />
+                              </g>
+                          </g>
+                      </svg>
+
+                      <!--  -->
+
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <svg width="32px" height="32px" viewbox="0 0 32 32" version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                              <path d="M0 0L32 0L32 32L0 32L0 0Z" id="path_1" />
+                              <clipPath id="mask_1">
+                                  <use xlink:href="#path_1" />
+                              </clipPath>
+                          </defs>
+                          <g id="icons8_instagram_4">
+                              <path d="M0 0L32 0L32 32L0 32L0 0Z" id="Background" fill="none" fill-rule="evenodd"
+                                  stroke="none" />
+                              <g clip-path="url(#mask_1)">
+                                  <path
+                                      d="M6.46875 0C2.91797 0 0 2.91406 0 6.46875L0 15.5313C0 19.082 2.91406 22 6.46875 22L15.5313 22C19.082 22 22 19.0859 22 15.5313L22 6.46875C22 2.91797 19.0859 0 15.5313 0L6.46875 0ZM6.46877 2L15.5313 2C18.0039 2 20 3.99609 20 6.46875L20 15.5313C20 18.0039 18.0039 20 15.5313 20L6.46877 20C3.99611 20 2.00002 18.0039 2.00002 15.5313L2.00002 6.46875C2.00002 3.99609 3.99611 2 6.46877 2L6.46877 2ZM16.9063 4.1875C16.4024 4.1875 16 4.58984 16 5.09375C16 5.59766 16.4024 6 16.9063 6C17.4102 6 17.8125 5.59766 17.8125 5.09375C17.8125 4.58984 17.4102 4.1875 16.9063 4.1875L16.9063 4.1875ZM11 5C7.69923 5 5.00002 7.69922 5.00002 11C5.00002 14.3008 7.69923 17 11 17C14.3008 17 17 14.3008 17 11C17 7.69922 14.3008 5 11 5L11 5ZM11 7C13.2227 7 15 8.77734 15 11C15 13.2227 13.2227 15 11 15C8.77736 15 7.00002 13.2227 7.00002 11C7.00002 8.77734 8.77736 7 11 7L11 7Z"
+                                      transform="translate(5 5)" id="Shape" fill="#FF0000" fill-rule="evenodd"
+                                      stroke="none" />
+                              </g>
+                          </g>
+                      </svg>
+                      <!--  -->
+
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <svg width="32px" height="32px" viewbox="0 0 32 32" version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                              <path d="M0 0L32 0L32 32L0 32L0 0Z" id="path_1" />
+                              <clipPath id="mask_1">
+                                  <use xlink:href="#path_1" />
+                              </clipPath>
+                          </defs>
+                          <g id="icons8_whatsapp_7">
+                              <path d="M0 0L32 0L32 32L0 32L0 0Z" id="Background" fill="none" fill-rule="evenodd"
+                                  stroke="none" />
+                              <g clip-path="url(#mask_1)">
+                                  <path
+                                      d="M20.5039 3.50391C18.2461 1.24609 15.2461 0 12.0508 0C5.46484 0 0.101563 5.35938 0.101563 11.9453C0.0976558 14.0508 0.648438 16.1055 1.69531 17.918L0 24.1094L6.33594 22.4453C8.07813 23.3984 10.0469 23.8984 12.0469 23.9023L12.0508 23.9023C18.6367 23.9023 23.9961 18.543 24 11.9531C24 8.76172 22.7578 5.76172 20.5039 3.50391L20.5039 3.50391ZM12.0508 21.8828L12.0469 21.8828C10.2656 21.8828 8.51563 21.4023 6.99219 20.5L6.62891 20.2852L2.86719 21.2695L3.87109 17.6055L3.63672 17.2305C2.64062 15.6484 2.11719 13.8203 2.11719 11.9453C2.11719 6.47266 6.57422 2.01953 12.0547 2.01953C14.707 2.01953 17.1992 3.05469 19.0742 4.92969C20.9492 6.80859 21.9805 9.30078 21.9805 11.9531C21.9805 17.4297 17.5234 21.8828 12.0508 21.8828L12.0508 21.8828ZM17.4961 14.4453C17.1992 14.2969 15.7305 13.5742 15.457 13.4766C15.1836 13.375 14.9844 13.3281 14.7852 13.625C14.5859 13.9258 14.0156 14.5977 13.8398 14.7969C13.668 14.9922 13.4922 15.0195 13.1953 14.8711C12.8945 14.7227 11.9336 14.4062 10.793 13.3867C9.90625 12.5977 9.30469 11.6172 9.13281 11.3203C8.95703 11.0195 9.11328 10.8594 9.26172 10.7109C9.39844 10.5781 9.5625 10.3633 9.71094 10.1875C9.85938 10.0156 9.91016 9.89062 10.0117 9.69141C10.1094 9.49219 10.0586 9.31641 9.98438 9.16797C9.91016 9.01953 9.3125 7.54687 9.0625 6.94922C8.82031 6.36719 8.57422 6.44922 8.39063 6.4375C8.21875 6.42969 8.01953 6.42969 7.82031 6.42969C7.62109 6.42969 7.29688 6.50391 7.02344 6.80469C6.75 7.10156 5.98047 7.82422 5.98047 9.29297C5.98047 10.7617 7.05078 12.1836 7.19922 12.3828C7.34766 12.5781 9.30469 15.5937 12.3008 16.8867C13.0117 17.1953 13.5664 17.3789 14 17.5156C14.7148 17.7422 15.3672 17.7109 15.8828 17.6367C16.457 17.5508 17.6484 16.9141 17.8984 16.2148C18.1445 15.5195 18.1445 14.9219 18.0703 14.7969C17.9961 14.6719 17.7969 14.5977 17.4961 14.4453L17.4961 14.4453Z"
+                                      transform="translate(4 4)" id="Shape" fill="#68C925" fill-rule="evenodd"
+                                      stroke="none" />
+                              </g>
+                          </g>
+                      </svg>
+                      <!--  -->
+
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <svg width="32px" height="32px" viewbox="0 0 32 32" version="1.1"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                              <path d="M0 0L32 0L32 32L0 32L0 0Z" id="path_1" />
+                              <clipPath id="mask_1">
+                                  <use xlink:href="#path_1" />
+                              </clipPath>
+                          </defs>
+                          <g id="icons8_vk.com_2">
+                              <path d="M0 0L32 0L32 32L0 32L0 0Z" id="Background" fill="none" fill-rule="evenodd"
+                                  stroke="none" />
+                              <g clip-path="url(#mask_1)">
+                                  <path
+                                      d="M4.08203 0C1.83984 0 0 1.83984 0 4.08203L0 17.918C0 20.1602 1.83984 22 4.08203 22L17.918 22C20.1602 22 22 20.1602 22 17.918L22 4.08203C22 1.83984 20.1602 0 17.918 0L4.08203 0ZM4.08203 2L17.918 2C19.0781 2 20 2.92188 20 4.08203L20 17.918C20 19.0781 19.0781 20 17.918 20L4.08203 20C2.92188 20 2 19.0781 2 17.918L2 4.08203C2 2.92188 2.92188 2 4.08203 2L4.08203 2ZM10.7187 7.23048C9.98437 7.22266 9.35937 7.23048 9.0078 7.40235C8.77343 7.51563 8.59374 7.77345 8.70312 7.78516C8.83984 7.8047 9.14843 7.8711 9.31249 8.09376C9.52343 8.37891 9.51562 9.02345 9.51562 9.02345C9.51562 9.02345 9.63281 10.7969 9.23046 11.0195C8.95312 11.1719 8.57421 10.8633 7.7539 9.45313C7.33593 8.72657 7.01952 7.92579 7.01952 7.92579C7.01952 7.92579 6.96093 7.77735 6.85156 7.69923C6.71874 7.60157 6.53515 7.57032 6.53515 7.57032L4.57812 7.58204C4.57812 7.58204 4.28515 7.59376 4.17968 7.71876C4.08202 7.83595 4.17187 8.06641 4.17187 8.06641C4.17187 8.06641 5.70312 11.6484 7.43749 13.4531C9.02734 15.1094 10.832 15 10.832 15L11.6523 15C11.6523 15 11.8984 14.9727 12.0234 14.8399C12.1406 14.7149 12.1367 14.4805 12.1367 14.4805C12.1367 14.4805 12.1211 13.3828 12.6289 13.2188C13.1328 13.0625 13.7734 14.2813 14.457 14.75C14.9766 15.1055 15.3711 15.0274 15.3711 15.0274L17.1992 15C17.1992 15 18.1523 14.9414 17.6992 14.1875C17.6641 14.1289 17.4375 13.6328 16.3437 12.6172C15.1953 11.5547 15.3476 11.7266 16.7305 9.88673C17.5703 8.76563 17.9062 8.08204 17.8008 7.78516C17.6992 7.50782 17.082 7.58204 17.082 7.58204L15.0234 7.59376C15.0234 7.59376 14.8711 7.57423 14.7578 7.64063C14.6484 7.70704 14.5781 7.86329 14.5781 7.86329C14.5781 7.86329 14.25 8.73048 13.8164 9.46876C12.9023 11.0234 12.5312 11.1094 12.3828 11.0117C12.0351 10.7852 12.1211 10.1055 12.1211 9.62501C12.1211 8.11329 12.3516 7.48829 11.6758 7.32423C11.4531 7.26954 11.2891 7.23438 10.7187 7.23048L10.7187 7.23048Z"
+                                      transform="translate(5 5)" id="Shape" fill="#0084FF" fill-rule="evenodd"
+                                      stroke="none" />
+                              </g>
+                          </g>
+                      </svg>
+                  </div>
+              </div>
+
+              <div class="footer-schedule">
+                  <div class="footer-shedule__title footer-title">
+                      График работы
+                  </div>
+                  <div class="footer-shedule__descr">
+                      Обращайтесь в любое время
+                  </div>
+              </div>
+              <div class="footer-undefined">
+                  <div class="footer-undefined__title footer-title">
+                      Для соотрудничества
+                  </div>
+                  <div class="footer-undefined__descr">
+                      almaty-web@info.com
+                  </div>
+              </div>
+              <div class="footer-contacts">
+                  <div class="footer-contacts__title footer-title">
+                      Контакты
+                  </div>
+                  <div class="footer-contacts__phone">
+                      <p>8 708 143 69 59</p>
+                      <p>8 700 772 72 94</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+      
 
 
 
-
+<script defer src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+</script>
+<script defer src="JS/burger.js"></script>
 
 </body>
 

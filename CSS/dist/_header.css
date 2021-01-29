@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@font-face {
+  font-family: SegoeUI Tahoma, Geneva, Verdana, sans-serif;
+  src: url(fonts/SegoeUI.ttf);
+}
+header {
+  font-family: "Segoe UI";
+}
+
+.header-top-wrapper {
+  background-color: #ECDCDC;
+  border-bottom: 1.5px solid #6C9BE2;
+}
+
+.header-contacts {
+  align-items: center;
+  display: flex;
+}
+.header-contacts a {
+  margin-right: 42px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu-links a {
+  margin-right: 25px;
+}
+
+.header-body {
+  background-color: #FAFAFA;
+  border: 2px solid blue;
+  padding: 117px 0 102px 0;
+  display: flex;
+}
+
+.header-body-bg {
+  background: url("../images/header/Ellipse.png") no-repeat;
+  height: 588px;
+}
+
+.header-body__mainBg {
+  background: url("../images/header/heaeder-bg.png") no-repeat;
+  border: 2px solid re;
+  height: 588px;
+}
+
+.header-body-text__title {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+}
+
+.header-body-text__subtitle {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}

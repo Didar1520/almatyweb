@@ -207,6 +207,14 @@ body {
 .header-body-text__button {
   color: #fff;
   background-color: #000;
+  padding: 13px 16px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header-body-text__button:hover {
+  color: #d8baba;
 }
 @media (max-width: 480px) {
   .header-body-text__button {

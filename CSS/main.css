@@ -511,6 +511,7 @@ body {
   margin-bottom: 40px;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 50px;
 }
 @media (max-width: 480px) {
   .our-works-menu {
@@ -545,7 +546,6 @@ body {
 @media (min-width: 480px) {
   .our-works-items div:nth-child(3n+3) {
     margin-right: 0px;
-    border: 2px solid red;
   }
 }
 .our-works-item {
